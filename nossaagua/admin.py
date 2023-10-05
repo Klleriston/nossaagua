@@ -2,7 +2,7 @@ from django.contrib import admin
 from nossaagua.models import Morador, FaltouAgua
 
 class Moradores(admin.ModelAdmin):
-    list_display = ('id','nome', 'cpf', 'email', 'celular', 'rua', 'numero_casa', 'bairro', 'cep')
+    list_display = ('id','nome', 'cpf', 'email', 'celular', 'rua', 'numero_casa', 'bairro', 'cep', 'senha')
     list_display_links = ('id', 'nome')
     search_fields = ('nome',)
     list_per_page = 20
